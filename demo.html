@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <title>fv-input|feaven input demo</title>
+  <meta charset="utf-8"/>
+  <meta name="description" content="fv-input|feaven input demo"/>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes"/>
+  <link rel="stylesheet" href="build/build.css" />
+  <style>
+    body, article, section, h1 {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    fv-toolbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 256px;
+      background-color: #00bcd4;
+    }
+    .demo-toolbar {
+      font-family: Consolas;
+      font-size: 48px;
+      color: #fff;
+    }
+    .card-content-position {
+      position: relative;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      align-content: space-between;
+      justify-content: center;
+      top: 228px;
+    }
+  </style>
+</head>
+<body>
+<article id="demo-page">
+  <fv-toolbar class="demo-toolbar">
+    <h1>feaven fab demo</h1>
+  </fv-toolbar>
+  <section class="card-content-position">
+    <fv-fab></fv-fab>
+  </section>
+</article>
+</body>
+<script src="build/build.js"></script>
+<script>
+var ff = require("fv-fab");
+ff.render("fv-fab");
+</script>
+</html>
